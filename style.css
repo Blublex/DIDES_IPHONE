@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Custom Properties */
+    --background: #FFFFFF;
+    --light-pink: #FFE2E2;
+    --dark-pink: #FF8EB1;
+    --black: black;
+    --font-title: 6em;
+    --font-text: 0.9em;
+    --font-rating: 20em;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Antonio", sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    background-color: var(--light-pink);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    color: #FF8EB1;
+    font-size: var(--font-title);
+    text-align: center;
+    font-weight: 300;
+    z-index: 1;
+    position: absolute;
+    top: -5%; 
+    left: center;
+    transition: opacity 0.5s;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    padding: 20px;
+    font-family: "Figtree", sans-serif;
+    color: var(--dark-pink);
+    position: absolute; 
+    top: 18%;
+    left: center;
+    transition: opacity 0.5s;
+}
+
+.director {
+    font-size: var(--font-text);
+    font-family: "Figtree", sans-serif; 
+    color: var(--dark-pink);
+    position: absolute;
+    top: 28%;
+    left: center;
+    transition: opacity 0.5s;
+}
+
+.text-block {
+    font-size: 2em;
+    font-family: "Figtree", sans-serif;
+    color: var(--dark-pink);
+    position: absolute;
+    top: 5%;
+    left: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-weight: 300;
+}
+
+.maincharacter-image {
+    max-width: 45vw;
+    height: auto;
+    position: absolute;
+    top: 37%;
+    left: 45vw;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.secondcharacter-image {
+    max-width: 45vw;
+    height: auto;
+    position: absolute; 
+    top: 37%;
+    left: 10vw;
+    z-index: 1;
+
+}
+
+.rating {
+    opacity: 0; 
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    color: black; 
+    font-size: 8vw; 
+    color: var(--black);
+    z-index: 3;
+    pointer-events: none; 
+}
+
+.position1 {
+    top: 65vw; 
+    left: 80vw; 
+}
+
+.position2 {
+    top: 63vw; 
+    left: 20vw; 
+}
+
+.circle {
+    opacity: 0; 
+    width: 60px; 
+    height: 70px; 
+    border-radius: 50%; 
+    position: absolute; 
+    border: 4px solid var(--dark-pink); 
+    z-index: 4; 
+}
+
+.circle1 {
+    top: 40%; 
+    left: 20%; 
+}
+
+.circle2 {
+    top: 40%;
+    left: 60%;
+}
